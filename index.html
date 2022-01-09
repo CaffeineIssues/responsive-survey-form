@@ -10,27 +10,26 @@
     <body>
         <!--- start of the main container -->
         <div class="header-img">
-            <img src="assets/dire.png" width="100%" >
+            <img src="assets/dire.png" width="100%" alt="image of 5 heroes of the dire">
         </div>        
         <div class=container>
             <header>
-                <h1 id="title">Dota 2 - Best Hero of the Dire Survey</h1>
+                <h1 id="title">Dota 2</h1>
+                <h1>Best Hero of the Dire Survey</h1>
                 <p id="description">2021 was an awesome year for Dota 2 and we would like to know which of The Dire heroes of the Dire you liked to play the most! Dont forget to fill in your steam profile to be elegible for a BIG reward.</p>
             </header>
             <form id="survey-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" placeholder="Your Full Name Here" style="width: 325px;">
                 <label for="age">Age:</label>
-                <input type="number" id="age" style="width: 40px;">
-                <br>
+                <input type="number" id="age" placeholder="18+" style="width: 40px;">
                 <label for="email" >Email:</label>
-                <input type="email" id="email" placeholder="Your Email here" style="width: 418px;">
-                <br>
+                <input type="email" id="email" placeholder="Your Email here" >
                 <label for="steamprof" >Steam Profile:</label>
-                <input type="steamprof" id="steamprof" placeholder="Your Steam Profile here" style="width: 351px;">
-                <br>
-                <Label for="dropdown">Hero of the Dire you Liked the most:</Label>
+                <input type="text" id="steamprof" placeholder="Your Steam Profile here">
+                <Label class="sing" for="dropdown">Hero of the Dire you Liked the most:</Label>
                 <select id="dropdown" style="width: 185px;">
+                    <option>Select a Hero</option>
                     <option>Abaddon</option>
                     <option>Axe</option>
                     <option>Chaos Knight</option>
@@ -86,9 +85,8 @@
                     <option>Winter Wyvern</option>
                     <option>Witch Doctor</option>
                 </select>
-                <br>
                 <label for="number">Number of games played with selected hero:<input type="number" id="number" min="1" placeholder="At least 1 game played" style="width: 115px;"></label>
-                <br>
+                
                 <label for="reason">Describe why you love to play the selected hero:</label>
                 <textarea id="reason" rows="4" cols="57">
                 </textarea>

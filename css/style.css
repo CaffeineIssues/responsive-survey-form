@@ -10,7 +10,7 @@ body{
 
 }
 .container{
-    position: relative;
+    position:relative;
     text-align: justify;
     margin: 0 auto;
     padding: 10px;
@@ -20,8 +20,8 @@ body{
 
     
 }
-br{
-    margin-top: 10px;
+h1{
+    text-align:center;
 }
 form{
     display:block;
@@ -40,11 +40,48 @@ form{
     margin-top: 10px;
     font-family: "Recursive";
   }
-  .header-img{
-    position: relative;
+.header-img{
+    white-space: nowrap;
+    overflow: hidden;
+    position:relative;
     margin: 0 auto;
     text-align:center;
     display:flex;
-    width: 31.2em;
-    color:white; 
+    width: 31.25em;
+    color:white;
+    
+     
   }
+img{
+    pointer-events: none;
+}
+input[type=email]{
+      display: inline-block;
+      margin-top: 10px;
+      width: 85%;
+  }
+input[type=number]{
+    display: inline-block;
+    margin-top: 10px;
+    width: 100%;
+}
+input[type=text]{
+    display: inline-block;
+    margin-top: 10px;   
+    width: 70%; 
+}
+select{
+    display: inline-block;
+    margin-top: 10px;    
+}
+textarea{
+    display: inline-block;
+    margin-top: 10px;    
+}
+label{
+    display: inline-block;
+    
+}
+.sing{
+    margin-top: 10px;
+}
