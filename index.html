@@ -1,34 +1,99 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Best Hero of the Dire Survey</title>
+        <!--- stylesheets -->
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Recursive"; />
     </head>
     <body>
-            <div class=container>
+        <!--- start of the main container -->
+        <div class="header-img">
+            <img src="assets/dire.png" width="100%" >
+        </div>        
+        <div class=container>
             <header>
                 <h1 id="title">Dota 2 - Best Hero of the Dire Survey</h1>
-                <p id="description">2021 was an awesome year for Dota 2 and we would like to know which of The Dire heroes of the Dire you liked to play the most! Dont forget to fill in your in-game name to be elegible for a BIG reward.</p>
+                <p id="description">2021 was an awesome year for Dota 2 and we would like to know which of The Dire heroes of the Dire you liked to play the most! Dont forget to fill in your steam profile to be elegible for a BIG reward.</p>
             </header>
             <form id="survey-form">
-                <label for="name">Name</label>
-                <input type="text" id="name" placeholder="Your Full Name Here">
-                <br>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Your Full Name Here" style="width: 325px;">
                 <label for="age">Age:</label>
-                <input type="number" id="age">
+                <input type="number" id="age" style="width: 40px;">
                 <br>
                 <label for="email" >Email:</label>
-                <input type="email" id="email" placeholder="Your Email here">
+                <input type="email" id="email" placeholder="Your Email here" style="width: 418px;">
+                <br>
+                <label for="steamprof" >Steam Profile:</label>
+                <input type="steamprof" id="steamprof" placeholder="Your Steam Profile here" style="width: 351px;">
                 <br>
                 <Label for="dropdown">Hero of the Dire you Liked the most:</Label>
-                <select id="dropdown"></select>
+                <select id="dropdown" style="width: 185px;">
+                    <option>Abaddon</option>
+                    <option>Axe</option>
+                    <option>Chaos Knight</option>
+                    <option>Doom</option>
+                    <option>Lifestealer</option>
+                    <option>Lycan</option>
+                    <option>Magnus</option>
+                    <option>Night Stalker</option>
+                    <option>Pudge</option>
+                    <option>Sand King</option>
+                    <option>Slardar</option>
+                    <option>Spirit Breaker</option>
+                    <option>Tidehunter</option>
+                    <option>Underlord</option>
+                    <option>Undying</option>
+                    <option>Wraith King</option>
+                    <option>Arc Warden</option>
+                    <option>Bloodseeker</option>
+                    <option>Broodmother</option>
+                    <option>Clinkz</option>
+                    <option>Faceless Void</option>
+                    <option>Medusa</option>
+                    <option>Meepo</option>
+                    <option>Nyx Assassin</option>
+                    <option>Phantom Assassin</option>
+                    <option>Razor</option>
+                    <option>Shadow Fiend</option>
+                    <option>Slark</option>
+                    <option>Spectre</option>
+                    <option>Terrorblade</option>
+                    <option>Venomancer</option>
+                    <option>Viper</option>
+                    <option>Weaver</option>
+                    <option>Ancient Apparition</option>
+                    <option>Bane</option>
+                    <option>Batrider</option>
+                    <option>Dark Seer</option>
+                    <option>Dazzle</option>
+                    <option>Death Prophet</option>
+                    <option>Enigma</option>
+                    <option>Grimstroke</option>
+                    <option>Invoker</option>
+                    <option>Leshrac</option>
+                    <option>Lich</option>
+                    <option>Lion</option>
+                    <option>Necrophos</option>
+                    <option>Outworld Destroyer</option>
+                    <option>Pugna</option>
+                    <option>Queen of Pain</option>
+                    <option>Shadow Demon</option>
+                    <option>Visage</option>
+                    <option>Warlock</option>
+                    <option>Winter Wyvern</option>
+                    <option>Witch Doctor</option>
+                </select>
                 <br>
-                <label for="number">Number of games played with selected hero:<input type="number" id="number" min="1" placeholder="At least 1 game played"></label>
+                <label for="number">Number of games played with selected hero:<input type="number" id="number" min="1" placeholder="At least 1 game played" style="width: 115px;"></label>
                 <br>
                 <label for="reason">Describe why you love to play the selected hero:</label>
-                <textarea id="reason">
+                <textarea id="reason" rows="4" cols="57">
                 </textarea>
                 <br>
-                <label for="position">What position is your picked hero best suited for in your opinion:</label>
+                <label for="position">What position is your hero best suited for:</label>
                 <br>
                 <label><input type="radio" id="carry" name="position" value="Carry">Carry</label>
                 <br>
@@ -40,9 +105,12 @@
                 <br>
                 <label><input type="radio" id="offlaner" name="position" value="Off-Laner">Off-Laner</label>
                 <br>
-                <input type="submit" value="Send">
+                <button type="submit" id="submit" class="submit-button">
+                    Enviar
+                </button>
             </form>
         </div>
+        <!--- end of main container -->
     </body>
     <footer>
 
