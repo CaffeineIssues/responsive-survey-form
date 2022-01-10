@@ -20,15 +20,15 @@
             </header>
             <form id="survey-form">
                 <label for="name">Name:</label>
-                <input type="text" id="name" placeholder="Your Full Name Here" style="width: 325px;">
+                <input type="text" id="name" placeholder="Your Full Name Here" style="width: 325px;" required>
                 <label for="age">Age:</label>
-                <input type="number" id="age" placeholder="18+" style="width: 40px;">
+                <input type="number" id="age" placeholder="18+" style="width: 40px;" required>
                 <label for="email" >Email:</label>
-                <input type="email" id="email" placeholder="Your Email here" >
+                <input type="email" id="email" placeholder="Your Email here" required>
                 <label for="steamprof" >Steam Profile:</label>
-                <input type="text" id="steamprof" placeholder="Your Steam Profile here">
+                <input type="text" id="steamprof" placeholder="Your Steam Profile here" required>
                 <Label class="sing" for="dropdown">Hero of the Dire you Liked the most:</Label>
-                <select id="dropdown" style="width: 185px; font-family:Recursive;" >
+                <select id="dropdown" style="width: 185px; font-family:Recursive;" required>
                     <option>Select a Hero</option>
                     <option>Abaddon</option>
                     <option>Axe</option>
@@ -85,22 +85,23 @@
                     <option>Winter Wyvern</option>
                     <option>Witch Doctor</option>
                 </select>
-                <label for="number">Number of games played with selected hero:<input type="number" id="number" min="1" placeholder="At least 1 game played" style="width: 115px;"></label>
-                <label for="reason" style="margin-top:10px;margin-bottom:10px;">Describe why you love to play the selected hero:</label>
-                <textarea id="reason" class="textarea" rows="4" style="width:98%;resize:none;"></textarea>
-                
-                <label for="position" style="margin-top:10px;">What position is your hero best suited for:</label>
+                <label for="number">Number of games played with selected hero:<input type="number" id="number" min="1" max="9999" placeholder="At least 1 game played" style="width: 115px;" required></label>
+                <label for="reason" style="margin-top:10px;">Describe why you love to play the selected hero:</label>
+                <textarea id="reason" class="textarea" rows="4" style="width:98%;resize:none;" required></textarea>
+                <p>What position is your hero best suited for:</p>
                
-                <p><label><input type="radio" id="carry" name="position" value="Carry">Carry</label></p>
+                <p><label><input type="checkbox" id="carry" name="position1" value="Carry">Carry</label></p>
                 
-                <p><label><input type="radio" id="rsupport" name="position" value="Roaming Support">Roaming Support</label></p>
+                <p><label><input type="checkbox" id="rsupport" name="position2" value="Roaming Support">Roaming Support</label></p>
                 
-                <p><label><input type="radio" id="hsupport" name="position" value="Hard Support">Hard Support</label></p>
+                <p><label><input type="checkbox" id="hsupport" name="position3" value="Hard Support">Hard Support</label></p>
                 
-                <p><label><input type="radio" id="midlaner" name="position" value="Mid Laner">Mid Laner</label></p>
+                <p><label><input type="checkbox" id="midlaner" name="position4" value="Mid Laner">Mid Laner</label></p>
                 
-                <p><label><input type="radio" id="offlaner" name="position" value="Off-Laner">Off-Laner</label></p>
-                
+                <p><label><input type="checkbox" id="offlaner" name="position5" value="Off-Laner">Off-Laner</label></p>
+                <p>Would you recommend Dota 2 to a friend?</p>
+                <label><input type="radio" name="choice" value=yes>Yes</label>
+                <label><input type="radio" name="choice" value=no>No</label>
                 <button type="submit" id="submit" class="submit-button">
                     Enviar
                 </button>
