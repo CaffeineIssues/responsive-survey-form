@@ -76,7 +76,8 @@ select{
 }
 textarea{
     display: inline-block;
-    margin-top: 10px;    
+    margin-top: 10px;
+    resize: none;
 }
 label{
     display: inline-block;
