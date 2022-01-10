@@ -86,23 +86,21 @@
                     <option>Witch Doctor</option>
                 </select>
                 <label for="number">Number of games played with selected hero:<input type="number" id="number" min="1" placeholder="At least 1 game played" style="width: 115px;"></label>
+                <label for="reason" style="margin-top:10px;margin-bottom:10px;">Describe why you love to play the selected hero:</label>
+                <textarea id="reason" class="textarea" rows="4" style="width:98%;resize:none;"></textarea>
                 
-                <label for="reason">Describe why you love to play the selected hero:</label>
-                <textarea id="reason" rows="4" cols="57">
-                </textarea>
-                <br>
-                <label for="position">What position is your hero best suited for:</label>
-                <br>
-                <label><input type="radio" id="carry" name="position" value="Carry">Carry</label>
-                <br>
-                <label><input type="radio" id="rsupport" name="position" value="Roaming Support">Roaming Support</label>
-                <br>
-                <label><input type="radio" id="hsupport" name="position" value="Hard Support">Hard Support</label>
-                <br>
-                <label><input type="radio" id="midlaner" name="position" value="Mid Laner">Mid Laner</label>
-                <br>
-                <label><input type="radio" id="offlaner" name="position" value="Off-Laner">Off-Laner</label>
-                <br>
+                <label for="position" style="margin-top:10px;">What position is your hero best suited for:</label>
+               
+                <p><label><input type="radio" id="carry" name="position" value="Carry">Carry</label></p>
+                
+                <p><label><input type="radio" id="rsupport" name="position" value="Roaming Support">Roaming Support</label></p>
+                
+                <p><label><input type="radio" id="hsupport" name="position" value="Hard Support">Hard Support</label></p>
+                
+                <p><label><input type="radio" id="midlaner" name="position" value="Mid Laner">Mid Laner</label></p>
+                
+                <p><label><input type="radio" id="offlaner" name="position" value="Off-Laner">Off-Laner</label></p>
+                
                 <button type="submit" id="submit" class="submit-button">
                     Enviar
                 </button>

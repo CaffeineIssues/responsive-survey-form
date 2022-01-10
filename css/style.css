@@ -74,10 +74,9 @@ select{
     display: inline-block;
     margin-top: 10px;    
 }
-textarea{
-    display: inline-block;
-    margin-top: 10px;
-    resize: none;
+.textarea{
+    display: inline-block;  
+    
 }
 label{
     display: inline-block;
@@ -85,4 +84,7 @@ label{
 }
 .sing{
     margin-top: 10px;
+}
+.radio-input{
+    display: inline-block;
 }
