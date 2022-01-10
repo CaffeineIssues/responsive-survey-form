@@ -19,11 +19,11 @@
                 <p id="description">2021 was an awesome year for Dota 2 and we would like to know which of The Dire heroes of the Dire you liked to play the most! Dont forget to fill in your steam profile to be elegible for a BIG reward.</p>
             </header>
             <form id="survey-form">
-                <label for="name">Name:</label>
+                <label id="name-label" for="name">Name:</label>
                 <input type="text" id="name" placeholder="Your Full Name Here" style="width: 325px;" required>
                 <label for="age">Age:</label>
                 <input type="number" id="age" placeholder="18+" style="width: 40px;" required>
-                <label for="email" >Email:</label>
+                <label id="email-label" for="email" >Email:</label>
                 <input type="email" id="email" placeholder="Your Email here" required>
                 <label for="steamprof" >Steam Profile:</label>
                 <input type="text" id="steamprof" placeholder="Your Steam Profile here" required>
@@ -85,7 +85,7 @@
                     <option>Winter Wyvern</option>
                     <option>Witch Doctor</option>
                 </select>
-                <label for="number">Number of games played with selected hero:<input type="number" id="number" min="1" max="9999" placeholder="At least 1 game played" style="width: 115px;" required></label>
+                <label id="number-label" for="number">Number of games played with selected hero:<input type="number" id="number" min="1" max="9999" placeholder="At least 1 game played" style="width: 115px;" required></label>
                 <label for="reason" style="margin-top:10px;">Describe why you love to play the selected hero:</label>
                 <textarea id="reason" class="textarea" rows="4" style="width:98%;resize:none;" required></textarea>
                 <p>What position is your hero best suited for:</p>
