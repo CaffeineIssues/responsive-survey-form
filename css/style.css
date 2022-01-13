@@ -9,6 +9,8 @@ body{
 
 
 }
+
+/* center main container and justify the text inside */ 
 .container{
     position:relative;
     text-align: justify;
@@ -20,15 +22,18 @@ body{
 
     
 }
+/* center the title */ 
 h1{
     text-align:center;
 }
+
 form{
     display:block;
     
     
     
 }
+
 .submit-button {
     display: block;
     width: 100%;
@@ -40,6 +45,7 @@ form{
     margin-top: 10px;
     font-family: "Recursive";
   }
+/* adjusts the header so it fits on the top of the container */ 
 .header-img{
     white-space: nowrap;
     overflow: hidden;
@@ -52,6 +58,7 @@ form{
     
      
   }
+/* removes pointer events on the header so the user can't click on it. Avoids minor issues with the header (especially on mobile) */ 
 img{
     pointer-events: none;
 }
